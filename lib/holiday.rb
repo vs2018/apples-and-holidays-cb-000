@@ -80,7 +80,7 @@ def all_supplies_in_holidays(holiday_hash)
         array.each do |split_word|
           split_word.capitalize
         end
-        holiday_string << array.join
+        holiday_string << ", " + array.join
       end
       
       puts holiday_string
