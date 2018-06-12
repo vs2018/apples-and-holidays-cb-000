@@ -43,10 +43,8 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
  
   
   holiday_supplies.each do |key, value|
-    if key == season 
-      
-       puts key[holiday_name] = supply_array
-     end
+    puts key
+    puts value
   end
 
 
