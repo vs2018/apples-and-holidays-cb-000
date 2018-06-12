@@ -77,10 +77,11 @@ def all_supplies_in_holidays(holiday_hash)
       
       data.each do |word|
         array = word.split("")
-        array.each do |split_word|
+        array.each_with_index do |split_word, index|
           split_word.capitalize
         end
-        holiday_string << ", " + array.join
+        holiday_string << ", " if index > 0
+        holiday_string << array.join
       end
       
       puts holiday_string
