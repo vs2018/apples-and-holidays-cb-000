@@ -73,15 +73,15 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{key.to_s.capitalize!}:"
     value.each do |holiday, data|
       
-      
+      holiday_string = "  #{holiday.to_s.capitalize!}: "
       
       data.each_with_index do |word, index|
         array = word.split("")
         array.each_with_index do |split_word, index|
           split_word.capitalize
         end
-        final_holiday << ", " if index > 0
-        final_holiday << array.join
+        holiday_string << ", " if index > 0
+        holiday_string << array.join
       end
       
       puts holiday_string
