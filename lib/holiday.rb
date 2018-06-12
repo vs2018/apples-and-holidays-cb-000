@@ -79,9 +79,9 @@ def all_supplies_in_holidays(holiday_hash)
         string.capitalize!
       end
       
-      holiday_array.join
+      string = holiday_array.join
       
-      holiday_string = "  " + holiday_array + ": "
+      holiday_string = "  " + string + ": "
       
     
       data.each_with_index do |word, index|
