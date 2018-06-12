@@ -75,6 +75,7 @@ def all_supplies_in_holidays(holiday_hash)
       
       holiday_string = "#{key.to_s.capitalize!}: "
       
+      data.values
       
     end
   end
