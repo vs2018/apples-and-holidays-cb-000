@@ -53,8 +53,10 @@ end
 def all_winter_holiday_supplies(holiday_hash)
   array = []
   holiday_supplies[:winter].each do |key, value|
-    
+    array << value
   end
+  
+  array.flatten
 
 end
 
