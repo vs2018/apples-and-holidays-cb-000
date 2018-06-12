@@ -73,6 +73,8 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{key.to_s.capitalize!}:"
     value.each do |holiday, data|
       
+      holiday.split("_")
+      
       holiday_string = "  #{holiday.to_s.capitalize!}: "
       
       data.each_with_index do |word, index|
